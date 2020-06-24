@@ -7,6 +7,15 @@
     <title>drag and drop</title>
 </head>
 <body>
+    <section class="draggableContainer">
+        <img class="draggable" draggable="true" src="./img/door.jpg" alt="door" id="door">      
+        <img class="draggable" draggable="true" src="./img/tree.png" alt="tree" id="tree">
+    </section>
+
+    <section class="droppableContainer">
+        <div class="droppable" data-draggable-id="door"><span>Puerta</span></div>
+        <div class="droppable" data-draggable-id="tree"><span>Árbol</span></div>
+    </section>
     <script src="app.js"></script>
 </body>
 </html>
