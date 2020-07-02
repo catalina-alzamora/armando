@@ -17,7 +17,7 @@ droppableElements.forEach(e => {
 // Drag and Drop Functions
 
 function dragStart(e) {
-    e.dataTransfer.setData('text', e.target.id);   // this works with icons with specific colors
+    e.dataTransfer.setData('text', e.target.id);   
 }
 function dragEnter(e) {
     e.target.classList.add('droppable-hover');
@@ -31,14 +31,14 @@ function dragLeave(e) {
 function drop(e) {
     e.preventDefault(); // this is to avoid default event which is to open the image in another tab
     e.target.classList.remove('droppable-hover');
-    const draggableElementData = e.dataTransfer.getData('text'); // this works with icons with specific colors
+    const draggableElementData = e.dataTransfer.getData('text'); 
     const droppableElementData = e.target.getAttribute('data-draggable-id');
+    console.log(droppableElementData)
     if(draggableElementData === droppableElementData) {
         e.target.classList.add('dropped');
         const draggableElement = document.getElementById(draggableElementData);
         draggableElement.classList.add('dragged');
         draggableElement.setAttribute('draggable', 'false');
-        e.target.insertAdjacentHTML('afterbegin', `<img src="./img/door.jpg"></img>`);
     }
 }
 
