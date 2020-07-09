@@ -7,16 +7,11 @@
     <title>drag and drop</title>
 </head>
 <body>
-    <section class="draggableContainer">
-        <img class="draggable" draggable="true" src="./img/trees.jpg" alt="trees" id="trees">
-        <img class="draggable" draggable="true" src="./img/sun.jpg" alt="sun" id="sun">
-        <img class="draggable" draggable="true" src="./img/window.jpg" alt="window" id="window">
-        <img class="draggable" draggable="true" src="./img/cloud.jpg" alt="cloud" id="cloud">
-        <img class="draggable" draggable="true" src="./img/door.jpg" alt="door" id="door">
-        <img class="draggable" draggable="true" src="./img/apple.jpg" alt="apple" id="apple">
-        <img class="draggable" draggable="true" src="./img/chimney.jpg" alt="chimney" id="chimney">
-    </section>
-
+    <Header>
+        <h1 class="logo">¡Armando!</h1>
+        <h4 class="instructions">Haz click en los elementos y arrástralos para armar la imagen</h4>
+    </Header>
+    <main>
     <section class="droppableContainer">
         <div class="canvas">
             <div class="droppable treesDiv" data-draggable-id="trees"></div>
@@ -28,6 +23,16 @@
             <div class="droppable chimneyDiv" data-draggable-id="chimney"></div>
         </div>
     </section>
+    <section class="draggableContainer">
+        <img class="draggable" draggable="true" src="./img/trees.jpg" alt="trees" id="trees">
+        <img class="draggable" draggable="true" src="./img/sun.jpg" alt="sun" id="sun">
+        <img class="draggable" draggable="true" src="./img/window.jpg" alt="window" id="window">
+        <img class="draggable" draggable="true" src="./img/cloud.jpg" alt="cloud" id="cloud">
+        <img class="draggable" draggable="true" src="./img/door.jpg" alt="door" id="door">
+        <img class="draggable" draggable="true" src="./img/apple.jpg" alt="apple" id="apple">
+        <img class="draggable" draggable="true" src="./img/chimney.jpg" alt="chimney" id="chimney">
+    </section>
+    </main>
     <script src="app.js"></script>
 </body>
 </html>
