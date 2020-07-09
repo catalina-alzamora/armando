@@ -8,14 +8,24 @@
 </head>
 <body>
     <section class="draggableContainer">
-        <img class="draggable" draggable="true" src="./img/door.jpg" alt="door" id="door">      
-        <img class="draggable" draggable="true" src="./img/tree.png" alt="tree" id="tree">
+        <img class="draggable" draggable="true" src="./img/trees.jpg" alt="trees" id="trees">
+        <img class="draggable" draggable="true" src="./img/sun.jpg" alt="sun" id="sun">
+        <img class="draggable" draggable="true" src="./img/window.jpg" alt="window" id="window">
+        <img class="draggable" draggable="true" src="./img/cloud.jpg" alt="cloud" id="cloud">
+        <img class="draggable" draggable="true" src="./img/door.jpg" alt="door" id="door">
+        <img class="draggable" draggable="true" src="./img/apple.jpg" alt="apple" id="apple">
+        <img class="draggable" draggable="true" src="./img/chimney.jpg" alt="chimney" id="chimney">
     </section>
 
     <section class="droppableContainer">
         <div class="canvas">
+            <div class="droppable treesDiv" data-draggable-id="trees"></div>
+            <div class="droppable sunDiv" data-draggable-id="sun"></div>
+            <div class="droppable windowDiv" data-draggable-id="window"></div>
+            <div class="droppable cloudDiv" data-draggable-id="cloud"></div>
             <div class="droppable doorDiv" data-draggable-id="door"></div>
-            <div class="droppable treeDiv" data-draggable-id="tree"></div>
+            <div class="droppable appleDiv" data-draggable-id="apple"></div>
+            <div class="droppable chimneyDiv" data-draggable-id="chimney"></div>
         </div>
     </section>
     <script src="app.js"></script>

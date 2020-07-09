@@ -17,7 +17,7 @@ droppableElements.forEach(e => {
 // Drag and Drop Functions
 
 function dragStart(e) {
-    e.dataTransfer.setData('text', e.target.id);   
+    e.dataTransfer.setData('text', e.target.id);
 }
 function dragEnter(e) {
     e.target.classList.add('droppable-hover');
