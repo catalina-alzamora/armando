@@ -5,8 +5,7 @@
 }
 body {
     font-family: 'Monserrat', sans-serif;
-    background-color: rgb(230, 123, 123);
-    color: #111;
+    background-color: #F2CF59;
 }
 header{
     margin-left: 3%;
@@ -17,24 +16,42 @@ main{
 }
 .logo{
     margin: 1% 0;
-    color: cornsilk;
+    color:  #FA6E4F;
+}
+.headerInstruction{
+    color:  #FA6E4F;
 }
 .instructions{
-    color: rgb(36, 36, 36);
+    margin: 1em;
+    color:  #FA6E4F;
+}
+ol li {
+    background: #F8CA9D;
+    padding: 5px;
+    margin-left: 35px;
+}
+ul li {
+    background: #cce5ff;
+    margin: 5px;
+}
+#restart{
+    width: 30%;
+    height: 15%;
+    margin: 25% 0 0 35%;
 }
 .draggableContainer {
     display: flex;
     flex-flow: row wrap;
     max-height: 32em;
-    max-width: 20em;
+    max-width: 15em;
 }
 .draggable {
-    width: 6em;
-    height: 6em;
+    width: 5em;
+    height: 5em;
     cursor: move;
     transition: opacity 0.2s;
     border: solid;
-    border-color: rgb(29, 28, 28);
+    border-color:#8EC9BB;
     border-radius: 0.5em;
     margin: 1em;
 }
@@ -50,7 +67,7 @@ main{
     text-align: center;
     background-color: #fff;
     opacity: 0.9;
-    border: 3px dashed #111;
+    border: 3px dashed #3e5550;
     transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
 }
 .droppable span {
@@ -83,64 +100,71 @@ main{
 }
 .droppableContainer {
     display: flex;
-    }
+}
 .canvas {
     position: relative;
     border: solid;
-    border-color: rgb(29, 28, 28);
-    width: 55em;
-    height: 32em;
-    background-image: url(./img/houseComplete.jpg);
+    border-color: #8EC9BB;
+    width: 46em;
+    height: 31em;
+    background-image: url(./img/fullImage.jpg);
     background-size: cover;
     border-radius: 0.5em;
     margin-top: 1em;
 }
 .doorDiv {
     position: absolute;
-    top: 18em;
-    left: 15.4em;
-    width: 5em;
-    height: 9.7em;
+    top: 15em;
+    left: 12.8em;
+    width: 4em;
+    height: 8em;
 }
 .windowDiv {
     position: absolute;
-    top: 18.2em;
-    left: 11.5em;
-    width: 3.5em;
-    height: 4.6em;
+    top: 15em;
+    left: 9.5em;
+    width: 3em;
+    height: 4em;
 }
-.treesDiv{
+.treeDiv{
     position: absolute;
-    top: 10em;
-    left: 40em;
-    width: 13em;
-    height: 18em;
+    top: 9em;
+    left: 34em;
+    width: 10em;
+    height: 14em;
 }
 .chimneyDiv {
     position: absolute;
-    top: 5em;
-    left: 23em;
-    width: 5em;
-    height: 6em;
+    top: 4.5em;
+    left: 19.5em;
+    width: 4em;
+    height: 5em;
 }
 .appleDiv {
     position: absolute;
-    top: 6em;
-    left: 40em;
+    top: 4em;
+    left: 39em;
     width: 3em;
     height: 3em;
 }
 .cloudDiv {
     position: absolute;
     top: 0;
-    left: 22em;
-    width: 15em;
-    height: 4em;
+    left: 18em;
+    width: 12.5em;
+    height: 3em;
 }
 .sunDiv {
     position: absolute;
-    top: 0.7em;
-    left: 5em;
-    width: 7.5em;
-    height: 7em;
+    top: 0.4em;
+    left: 4em;
+    width: 7em;
+    height: 6em;
+}
+.sunflowerDiv {
+    position: absolute;
+    top: 23em;
+    left: 0.3em;
+    width: 5em;
+    height: 6.5em;
 }

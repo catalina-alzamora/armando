@@ -9,29 +9,45 @@
 <body>
     <Header>
         <h1 class="logo">¡Armando!</h1>
-        <h4 class="instructions">Haz click en los elementos y arrástralos para armar la imagen</h4>
+        <h4 class="headerInstruction">Haz click en los elementos y arrástralos para armar la imagen</h4>
     </Header>
     <main>
-    <section class="droppableContainer">
-        <div class="canvas">
-            <div class="droppable treesDiv" data-draggable-id="trees"></div>
-            <div class="droppable sunDiv" data-draggable-id="sun"></div>
-            <div class="droppable windowDiv" data-draggable-id="window"></div>
-            <div class="droppable cloudDiv" data-draggable-id="cloud"></div>
-            <div class="droppable doorDiv" data-draggable-id="door"></div>
-            <div class="droppable appleDiv" data-draggable-id="apple"></div>
-            <div class="droppable chimneyDiv" data-draggable-id="chimney"></div>
-        </div>
-    </section>
-    <section class="draggableContainer">
-        <img class="draggable" draggable="true" src="./img/trees.jpg" alt="trees" id="trees">
-        <img class="draggable" draggable="true" src="./img/sun.jpg" alt="sun" id="sun">
-        <img class="draggable" draggable="true" src="./img/window.jpg" alt="window" id="window">
-        <img class="draggable" draggable="true" src="./img/cloud.jpg" alt="cloud" id="cloud">
-        <img class="draggable" draggable="true" src="./img/door.jpg" alt="door" id="door">
-        <img class="draggable" draggable="true" src="./img/apple.jpg" alt="apple" id="apple">
-        <img class="draggable" draggable="true" src="./img/chimney.jpg" alt="chimney" id="chimney">
-    </section>
+        <section class="instructions">
+            <ol>
+                <li>Posiciona la puerta de la casa</li>
+                <li>Posiciona la ventana</li>
+                <li>Posiciona la chimenea</li>
+                <li>Posiciona el árbol</li>
+                <li>Posiciona el sol</li>
+                <li>Posiciona la manzana</li>
+                <li>Posiciona el girasol</li>
+                <li>Posiciona la nube</li>
+              </ol>
+        <img src="./img/restartIcon.png" id="restart">
+
+        </section>
+        <section class="droppableContainer">
+            <div class="canvas">
+                <div class="droppable treeDiv" data-draggable-id="tree"></div>
+                <div class="droppable sunDiv" data-draggable-id="sun"></div>
+                <div class="droppable windowDiv" data-draggable-id="window"></div>
+                <div class="droppable cloudDiv" data-draggable-id="cloud"></div>
+                <div class="droppable doorDiv" data-draggable-id="door"></div>
+                <div class="droppable appleDiv" data-draggable-id="apple"></div>
+                <div class="droppable chimneyDiv" data-draggable-id="chimney"></div>
+                <div class="droppable sunflowerDiv" data-draggable-id="sunflower"></div>
+            </div>
+        </section>
+        <section class="draggableContainer">
+            <img class="draggable" draggable="true" src="./img/tree.jpg" alt="tree" id="tree">
+            <img class="draggable" draggable="true" src="./img/sun.jpg" alt="sun" id="sun">
+            <img class="draggable" draggable="true" src="./img/window.jpg" alt="window" id="window">
+            <img class="draggable" draggable="true" src="./img/cloud.jpg" alt="cloud" id="cloud">
+            <img class="draggable" draggable="true" src="./img/door.jpg" alt="door" id="door">
+            <img class="draggable" draggable="true" src="./img/apple.jpg" alt="apple" id="apple">
+            <img class="draggable" draggable="true" src="./img/chimney.jpg" alt="chimney" id="chimney">
+            <img class="draggable" draggable="true" src="./img/sunflower.jpg" alt="sunflower" id="sunflower">
+        </section>
     </main>
     <script src="app.js"></script>
 </body>
