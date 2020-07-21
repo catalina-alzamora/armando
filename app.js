@@ -1,6 +1,8 @@
 const draggableElements = document.querySelectorAll('.draggable');
 const droppableElements = document.querySelectorAll('.droppable');
 const restartBtn = document.getElementById('restart');
+let droppedElements;
+let draggedElements;
 
 draggableElements.forEach(e => {
     e.addEventListener('dragstart', dragStart);
@@ -43,14 +45,16 @@ function drop(e) {
 }
 
 restartBtn.addEventListener('click', () => {
-const droppedElements = document.querySelectorAll('.dropped');
-const draggedElements = document.querySelectorAll('.dragged');
-droppedElements.forEach(e => {
-    e.classList.remove('dropped');
-});
-draggedElements.forEach(e => {
-    e.classList.remove('dragged');
-})
+    droppedElements = document.querySelectorAll('.dropped');
+    draggedElements = document.querySelectorAll('.dragged');
+
+    draggedElements.forEach(e => {
+        e.classList.remove('dragged');
+        e.setAttribute('draggable', 'true');
+    })
+    droppedElements.forEach(e => {
+        e.classList.remove('dropped');
+    });
     console.log('boton reiniciar')
 }
 )

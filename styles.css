@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
 }
 body {
     font-family: 'Monserrat', sans-serif;
-    background-color: #F2CF59;
+    background-color: #fcfcfc;
 }
 header{
     margin-left: 3%;
@@ -15,45 +17,49 @@ main{
     justify-content: space-around;
 }
 .logo{
-    margin: 1% 0;
-    color:  #FA6E4F;
+    margin: 0.5% 0;
+    height: 13%;
+    width: 13%;
 }
 .headerInstruction{
-    color:  #FA6E4F;
+    color:  #f0637b;
+    margin: 0 0 5% 10%;
 }
 .instructions{
     margin: 1em;
-    color:  #FA6E4F;
+    color:  #74737A;
 }
 ol li {
     background: #F8CA9D;
-    padding: 5px;
+    padding: 10px;
     margin-left: 35px;
+    margin-bottom: 5px;
+    border-radius: 0.5em;
 }
 ul li {
     background: #cce5ff;
     margin: 5px;
 }
-#restart{
-    width: 30%;
-    height: 15%;
-    margin: 25% 0 0 35%;
+#restart:active {
+   opacity: 0.3;
 }
 .draggableContainer {
     display: flex;
     flex-flow: row wrap;
     max-height: 32em;
-    max-width: 15em;
+    width: 35%;
 }
 .draggable {
     width: 5em;
     height: 5em;
-    cursor: move;
+    cursor: grab;
     transition: opacity 0.2s;
     border: solid;
-    border-color:#8EC9BB;
+    border-color:#f0637b;;
     border-radius: 0.5em;
     margin: 1em;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 .draggable:hover {
     opacity: 0.5;
@@ -67,7 +73,7 @@ ul li {
     text-align: center;
     background-color: #fff;
     opacity: 0.9;
-    border: 3px dashed #3e5550;
+    border: 3px dashed #74737A;
     transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
 }
 .droppable span {
@@ -103,8 +109,7 @@ ul li {
 }
 .canvas {
     position: relative;
-    border: solid;
-    border-color: #8EC9BB;
+    border: 1em solid #ffec59;;
     width: 46em;
     height: 31em;
     background-image: url(./img/fullImage.jpg);
@@ -114,36 +119,36 @@ ul li {
 }
 .doorDiv {
     position: absolute;
-    top: 15em;
-    left: 12.8em;
+    top: 14.5em;
+    left: 12.4em;
     width: 4em;
-    height: 8em;
+    height: 7.5em;
 }
 .windowDiv {
     position: absolute;
-    top: 15em;
-    left: 9.5em;
+    top: 14.5em;
+    left: 9em;
     width: 3em;
     height: 4em;
 }
 .treeDiv{
     position: absolute;
     top: 9em;
-    left: 34em;
-    width: 10em;
+    left: 33.5em;
+    width: 9em;
     height: 14em;
 }
 .chimneyDiv {
     position: absolute;
-    top: 4.5em;
-    left: 19.5em;
+    top: 4em;
+    left: 19em;
     width: 4em;
     height: 5em;
 }
 .appleDiv {
     position: absolute;
     top: 4em;
-    left: 39em;
+    left: 38em;
     width: 3em;
     height: 3em;
 }
@@ -156,15 +161,30 @@ ul li {
 }
 .sunDiv {
     position: absolute;
-    top: 0.4em;
+    top: 0.3em;
     left: 4em;
-    width: 7em;
-    height: 6em;
+    width: 6em;
+    height: 5.8em;
 }
 .sunflowerDiv {
     position: absolute;
     top: 23em;
     left: 0.3em;
     width: 5em;
-    height: 6.5em;
+    height: 4.8em;
+}
+#restart {
+    width: 5%;
+    height: 6%;
+    opacity: 0.8;
+}
+.restartDiv {
+    position: absolute;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: #ffec59;
+    border-radius: 0 0 10px 0
+}
+#restart:hover {
+    cursor: pointer;
 }

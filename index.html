@@ -4,30 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>drag and drop</title>
+    <title>Armando!</title>
 </head>
 <body>
     <Header>
-        <h1 class="logo">¡Armando!</h1>
-        <h4 class="headerInstruction">Haz click en los elementos y arrástralos para armar la imagen</h4>
+        <img src="./img/armandoLogo.png" class="logo">
     </Header>
     <main>
         <section class="instructions">
+        <h4 class="headerInstruction">
+            Haz click en los elementos y arrástralos para armar la imagen
+        </h4>
             <ol>
-                <li>Posiciona la puerta de la casa</li>
-                <li>Posiciona la ventana</li>
-                <li>Posiciona la chimenea</li>
-                <li>Posiciona el árbol</li>
-                <li>Posiciona el sol</li>
-                <li>Posiciona la manzana</li>
-                <li>Posiciona el girasol</li>
-                <li>Posiciona la nube</li>
-              </ol>
-        <img src="./img/restartIcon.png" id="restart">
-
+                <li>Coloca la puerta en la casa</li>
+                <li>Coloca la ventana al lado de la puerta</li>
+                <li>Coloca la chimenea en el techo</li>
+                <li>Coloca el árbol a la derecha</li>
+                <li>Coloca el sol arriba en el cielo</li>
+                <li>Coloca la manzana sobre el árbol</li>
+                <li>Coloca el girasol abajo en el pasto</li>
+                <li>Coloca la nube arriba en el cielo</li>
+            </ol>
         </section>
         <section class="droppableContainer">
             <div class="canvas">
+                <div class="restartDiv">
+                </div>
+                <img src="./img/again.png" id="restart">
                 <div class="droppable treeDiv" data-draggable-id="tree"></div>
                 <div class="droppable sunDiv" data-draggable-id="sun"></div>
                 <div class="droppable windowDiv" data-draggable-id="window"></div>
